@@ -1,1 +1,2 @@
-print 'demo command latest'
+def doCommand():
+    print 1111

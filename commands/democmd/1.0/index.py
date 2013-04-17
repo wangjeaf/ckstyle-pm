@@ -1,1 +1,2 @@
-print 'demo cmd 1.0'
+def doCommand():
+    print 'democmd 1.0'
