@@ -4,7 +4,7 @@ class PluginClass(RuleChecker):
     def __init__(self):
         self.id = 'first-demo-plugin'
 	self.errorLevel = ERROR_LEVEL.ERROR
-	self.errorMsg = 'no message'
+	self.errorMsg = 'error message from demo plugin'
     
     def check(self, rule, config):
         return False
