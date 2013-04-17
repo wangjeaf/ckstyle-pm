@@ -1,9 +1,13 @@
-class PluginClass():
+from ckstyle.plugins.Base import *
+
+class PluginClass(RuleChecker):
     def __init__(self):
-        print 'init plugin class'
+        self.id = 'first-demo-plugin'
+	self.errorLevel = ERROR_LEVEL.ERROR
+	self.errorMsg = 'no message'
     
     def check(self, rule, config):
-        print 'check'
+        return False
     
     def fix(self, rule, config):
-        print 'fix'
+        print 'fixing ' + rule.name
