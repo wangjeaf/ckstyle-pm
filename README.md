@@ -1,22 +1,27 @@
 ckstyle-pm
 ==========
 
-Plugin Manager for CKstyle
-## 简介
-
 欢迎来到CKstyle的插件管理中心
 
-### 插件安装
+# 插件安装
 
 通过 `ckstyle install/get/add pluginName` 即可安装规则插件
 
 通过 `ckstyle installcmd/getcmd/addcmd commandName` 即可安装ckstyle的子命令插件
 
-### 插件开发
+安装后，在您本地的目录为 `ckstyle/userplugins/plugins` 和 `ckstyle/userplugins/commands` 
+
+# 插件使用 
+
+可以通过 `ckstyle xxxxx` 直接使用子命令
+
+在执行ckstyle的操作时，将会自动加载 `ckstyle/userplugins/plugins` 目录下的插件内容，其处理方式与 `ckstyle/plugins` 目录的插件是一样的。
+
+# 插件开发
 
 插件主要分为规则插件和子命令插件两种，分别放置在 `plugins` 和 `commands` 目录下
 
-#### 规则插件的开发
+## 规则插件的开发
 
 1、规则插件请放置在 `ckstyle-pm/plugins` 目录下
 
@@ -26,7 +31,7 @@ Plugin Manager for CKstyle
 
 规则插件类的详细编写规则，请参见 <a href="https://github.com/wangjeaf/CSSCheckStyle#plugin-development" target="_blank">CKstyle的官方插件开发文档</a>
 
-#### 子命令插件的开发
+## 子命令插件的开发
 
 目前ckstyle已经通过子命令的方式来进行各种操作，同时允许插件扩展ckstyle的子命令。
 
